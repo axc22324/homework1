@@ -1,11 +1,18 @@
----
-title: "homework1"
-output: pdf_document
----
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
 
 
 
@@ -50,19 +57,19 @@ integer literal 2.33L contains decimal; using numeric value
 Error: object 'True' not found
 > true
 Error: object 'true' not found
-> 8 > 7 # §PÂ_ 8 ¬O§_?©ó 7
+> 8 > 7 # åˆ¤æ–· 8 æ˜¯å¦?æ–¼ 7
 [1] TRUE
-> 8 < 7 # §PÂ_ 8 ¬O§_?©ó 7
+> 8 < 7 # åˆ¤æ–· 8 æ˜¯å¦?æ–¼ 7
 [1] FALSE
-> 8 >= 7 # §PÂ_ 8 ¬O§_?©óµ¥©ó 7
+> 8 >= 7 # åˆ¤æ–· 8 æ˜¯å¦?æ–¼ç­‰æ–¼ 7
 [1] TRUE
-> 8 <= 7 # §PÂ_ 8 ¬O§_?©óµ¥©ó 7
+> 8 <= 7 # åˆ¤æ–· 8 æ˜¯å¦?æ–¼ç­‰æ–¼ 7
 [1] FALSE
-> 8 == 7 # §PÂ_ 8 ¬O§_µ¥©ó 7
+> 8 == 7 # åˆ¤æ–· 8 æ˜¯å¦ç­‰æ–¼ 7
 [1] FALSE
-> 8 != 7 # §PÂ_ 8 ¬O§_¤£µ¥©ó 7
+> 8 != 7 # åˆ¤æ–· 8 æ˜¯å¦ä¸ç­‰æ–¼ 7
 [1] TRUE
-> 7 %in% c(8, 7) # §PÂ_ 7 ¬O§_¥]§t©ó?­Ó c(8, 7) ¤§¤¤
+> 7 %in% c(8, 7) # åˆ¤æ–· 7 æ˜¯å¦åŒ…å«æ–¼?å€‹ c(8, 7) ä¹‹ä¸­
 [1] TRUE
 > first_name <- "Cindy"
 > first_name
@@ -99,14 +106,14 @@ Error: object 'my_weight' not found
 [1] TRUE
 > is.character(TRUE)
 [1] FALSE
-> inherits(Sys.Date(), what = "Date") # Sys.Date() ¬O?´ÁÃþ«¬
+> inherits(Sys.Date(), what = "Date") # Sys.Date() æ˜¯?æœŸé¡žåž‹
 [1] TRUE
-> inherits("1970-01-01", what = "Date") # "1970-01-01" ¬O?¦rÃþ«¬
+> inherits("1970-01-01", what = "Date") # "1970-01-01" æ˜¯?å­—é¡žåž‹
 [1] FALSE
 > 
-> inherits(Sys.time(), what = "POSIXct") # Sys.time() ¬O®É¶¡Ãþ«¬
+> inherits(Sys.time(), what = "POSIXct") # Sys.time() æ˜¯æ™‚é–“é¡žåž‹
 [1] TRUE
-> inherits("1970-01-01 00:00:00", what = "POSIXct") # "1970-01-01 00:00:00" ¬O?¦rÃþ«¬
+> inherits("1970-01-01 00:00:00", what = "POSIXct") # "1970-01-01 00:00:00" æ˜¯?å­—é¡žåž‹
 [1] FALSE
 > 
 > as.numeric(7L)
@@ -169,14 +176,14 @@ Error: object 'my_weight' not found
 [1] "1970-01-01"
 > as.Date("1970/01/01")
 [1] "1970-01-01"
-> as.Date("01-01-1970") # Âà´«¿ù»~
+> as.Date("01-01-1970") # è½‰æ›éŒ¯èª¤
 [1] "0001-01-19"
-> as.Date("01-01-1970", format = "%m-%d-%Y") # Âà´«¥¿½T
+> as.Date("01-01-1970", format = "%m-%d-%Y") # è½‰æ›æ­£ç¢º
 [1] "1970-01-01"
-> as.Date("01/01/70") # ¤£¬O¹w³]®æ¦¡¡AÂà´«¥¢±Ñ
+> as.Date("01/01/70") # ä¸æ˜¯é è¨­æ ¼å¼ï¼Œè½‰æ›å¤±æ•—
 Error in charToDate(x) : 
   character string is not in a standard unambiguous format
-> as.Date("01/01/70", format = "%m/%d/%y") # Âà´«¥¿½T
+> as.Date("01/01/70", format = "%m/%d/%y") # è½‰æ›æ­£ç¢º
 [1] "1970-01-01"
 > 
 > as.POSIXct("1970-01-01 00:00:00")
